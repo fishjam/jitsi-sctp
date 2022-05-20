@@ -12,7 +12,7 @@
     <parent>
         <groupId>org.jitsi</groupId>
         <artifactId>jniwrapper</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>fishjam-debug</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -34,7 +34,7 @@
                 <linkStartOpts>
                     -shared
                     -L${project.build.directory}/usrsctp-${project.version}/lib
-                    target/usrsctp-1.0-SNAPSHOT/lib/libusrsctp.a
+			target/usrsctp-${project.version}/lib/libusrsctp.a
                     -lpthread
                 </linkStartOpts>
                 <linkEndOpts></linkEndOpts>
